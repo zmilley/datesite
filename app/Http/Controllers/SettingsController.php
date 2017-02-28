@@ -61,10 +61,12 @@ class SettingsController extends Controller
     public function getAllProfileImages()
     {
         $user = Auth::user();
-        $path = public_path('uploads/profile_images/') . $user->id . '/';
+        $path = public_path('uploads/profile_images/') . $user->id;
 
         $files = File::allFiles($path);
 
-        return json_encode($files);
+        foreach($files as $file){
+            echo json_encode($file);
+        }
     }
 }
