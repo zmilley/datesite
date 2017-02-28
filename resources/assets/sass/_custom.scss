@@ -1,0 +1,19 @@
+.miniprofileimg {
+  width:32px;
+  height:32px;
+  background-size: contain;
+  border-radius: 50%;
+  float:left;
+  margin-top:-6px;
+  margin-right:6px;
+}
+
+.profileimg {
+  width:150px;
+  height:150px;
+  background-size: cover;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:25px;
+  float:left;
+}
